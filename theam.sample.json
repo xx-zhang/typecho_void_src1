@@ -1,0 +1,101 @@
+
+{
+    "name" : "Blog站点测试",
+    "brandFont": {
+        "src": " ",
+        "style": "normal",
+        "weight": "normal"
+    },
+    "desktopBannerHeight" : 30,
+    "mobileBannerHeight" : 20,
+    "headerMode": 1,
+    "headerModeMobile": 0,
+    "defaultFontSize": 1,
+    "useFiraCodeFont": false,
+    "parseFigcaption": true,
+    "twitterId": "actanble1",
+    "weiboId" : "-",
+    "commentFoldThreshold": [5, 1.5],
+    "commentNotification": "注意保持恰当的评论",
+    "darkModeTime" : {
+        "start": 22.5,
+        "end": 7.0
+    },
+    "followSystemColorScheme" : true,
+    "largePhotoSet": true,
+    "bluredLazyload": false,
+    "CDNType": {
+        "static.imalan.cn": "UPYUN"
+    },
+    "macStyleCodeBlock": false,
+    "lineNumbers": true,
+    "link" : [
+        {
+            "name": "GitHub",
+            "icon": "github",
+            "href": "https:\/\/github.com\/xx-zhang",
+            "target": "_blank"
+        },
+        {
+            "name": "微博",
+            "icon": "weibo",
+            "href": "https:\/\/weibo.com\/5245109677",
+            "target": "_blank"
+        },
+        {
+            "name": "Twitter",
+            "icon": "twitter",
+            "href": "https://twitter.com/AlanDecode",
+            "target": "_blank"
+        },
+        {
+            "name": "QQ",
+            "icon": "qq",
+            "href": "https://shang.qq.com/wpa/qunwpa?idkey=4ed2406c1d84b70c319c8ee79752d1704702b770aa0da405ca0f274e4d4db5f8",
+            "target": "_blank"
+        }
+    ],
+    "nav" : [
+        {
+            "name" : "漏洞研究",
+            "items" : [
+                {
+                    "link" : "http:\/\/t.me\/imalanblog",
+                    "title" : "漏洞发布",
+                    "target" : "_self"
+                },
+                {
+                    "link" : "https:\/\/shang.qq.com\/wpa\/qunwpa?idkey=4ed2406c1d84b70c319c8ee79752d1704702b770aa0da405ca0f274e4d4db5f8",
+                    "title" : "应急预案",
+                    "target" : "_blank"
+                },
+                {
+                    "link" : "https:\/\/weibo.com\/5245109677",
+                    "title" : "威胁情报"
+                },
+                {
+                    "link" : "https:\/\/twitter.com\/AlanDecode",
+                    "title" : "Twitter"
+                },
+                {
+                    "link" : "https:\/\/github.com\/AlanDecode",
+                    "title" : "GitHub"
+                }
+            ]
+        },
+        {
+            "name" : "nav测试",
+            "items" : [
+                {
+                    "link" : "https:\/\/www.imalan.cn",
+                    "title" : "引导页"
+                },
+                {
+                    "link" : "https:\/\/api.imalan.cn",
+                    "title" : "熊猫 API"
+                }
+            ]
+        }
+    ]
+}
+

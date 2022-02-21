@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+
+   tupecho:
+      container_name: typecho
+      restart: always
+      image: registry.cn-beijing.aliyuncs.com/rapid7/apache-php:php73
+      environment:
+        - TZ=Asia/Shanghai
+      depends_on:
+        - mysql
+      ports:
+        - 8060:80
+      volumes:
+        - ./code:/var/www/app
+      networks:
+        customize_net:
+          ipv4_address: 192.168.96.77
+
+   mysql:
+      container_name: mysql5
+      image: 'registry.cn-beijing.aliyuncs.com/sulfilter/xhack:mysql5'
+      volumes:
+        - /srv/docker.mysql2.data:/var/lib/mysql
+      restart: always
+      expose:
+        - 3306
+      environment:
+       - MYSQL_ROOT_PASSWORD=test@1q2w2e4R
+       - TZ=Asia/Shanghai
+      networks:
+        customize_net:
+          ipv4_address: 192.168.96.101
+ 
+networks:
+  customize_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.96.0/24
+
